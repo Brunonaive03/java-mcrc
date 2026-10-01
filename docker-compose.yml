@@ -1,0 +1,12 @@
+services:
+  java:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: soot-java
+    working_dir: /workspace
+    volumes:
+      - ./workspace:/workspace
+    stdin_open: true
+    tty: true
+    

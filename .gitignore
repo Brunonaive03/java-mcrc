@@ -1,0 +1,128 @@
+# ============================================================
+# Java
+# ============================================================
+
+# Compiled Java classes
+*.class
+
+# JARs / Java archives generated locally
+*.jar
+
+*.war
+*.ear
+
+# Java crash logs
+hs_err_pid*
+replay_pid*
+
+# ============================================================
+# Workspace
+# ============================================================
+
+# Ignore everything in workspace
+/workspace/*
+
+# Keep Test.java
+!/workspace/Test.java
+
+# Allow traversal into libs, but ignore everything inside it
+
+# Allow traversal into libs, but ignore everything inside it
+!/workspace/libs/
+/workspace/libs/*
+
+# Keep only the SOOT dependency
+!/workspace/libs/soot-4.6.0-jar-with-dependencies.jar
+
+# ============================================================
+# Build tools
+# ============================================================
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ============================================================
+# SOOT
+# ============================================================
+
+# SOOT generated output
+sootOutput/
+
+# SOOT-generated intermediate files
+*.jimple
+
+# ============================================================
+# IDEs / Editors
+# ============================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/.nb-gradle/
+
+# ============================================================
+# Operating system
+# ============================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# ============================================================
+# Logs / temporary files
+# ============================================================
+
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Temporary files created by editors
+*.bak
+*.orig
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+
+.env
+.env.*
+!.env.example
