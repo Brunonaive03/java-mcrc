@@ -14,6 +14,7 @@ docker compose exec -w /workspace/classes -T java java \
     -cp ../libs/soot-4.6.0-jar-with-dependencies.jar \
     soot.Main \
     -process-dir . \
+    -d /workspace/sootOutput \
     -f J \
     -p jb enabled:false
 

@@ -7,7 +7,7 @@ docker compose up -d
 
 echo.
 echo === Running SOOT on directory... ===
-docker compose exec -w /workspace/classes -T java java -cp ../libs/soot-4.6.0-jar-with-dependencies.jar soot.Main -process-dir . -f J -p jb enabled:false
+docker compose exec -w /workspace/classes -T java java -cp ../libs/soot-4.6.0-jar-with-dependencies.jar soot.Main -process-dir . -d /workspace/sootOutput -f J -p jb enabled:false
 
 echo.
 echo === SOOT execution complete. ===
