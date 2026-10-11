@@ -20,7 +20,7 @@ Java bytecode (.class)
 Execution / Output
 ```
 
-This repository uses **JDK 11** in the container.
+This repository uses **JDK 21** in the container.
 
 ## Repository structure
 
@@ -51,7 +51,7 @@ Only the following are required on the host:
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - Git, if you want to clone the repository or the exercise repositories
 
-You **do not need to install Java/JDK on the host**. Java 11 is provided by the Docker image.
+You **do not need to install Java/JDK on the host**. Java 21 is provided by the Docker image.
 
 Because the container is Linux-based, Docker Desktop must have its Linux container engine running.
 
@@ -264,6 +264,6 @@ git update-index --chmod=+x scripts/run-soot.sh
 [ ] Linux Docker engine is available
 [ ] Test.java is in workspace/
 [ ] Container image has been built
-[ ] Java 11 is available inside the container
+[ ] Java 21 is available inside the container
 [ ] Test.java compiles and runs successfully
 ```
