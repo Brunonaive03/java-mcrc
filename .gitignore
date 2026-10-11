@@ -129,3 +129,6 @@ Desktop.ini
 
 # Ignore SootAssignmentAnalysis
 SootAssignmentAnalysis/
+
+# Ignore conflict-static-analysis
+conflict-static-analysis/

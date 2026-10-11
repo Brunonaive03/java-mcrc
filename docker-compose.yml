@@ -8,6 +8,10 @@ services:
     volumes:
       - ./workspace:/workspace
       - ./SootAssignmentAnalysis:/SootAssignmentAnalysis
+      - ./conflict-static-analysis:/conflict-static-analysis
+    environment:
+      - GITHUB_USER=${GITHUB_USER:-}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
     stdin_open: true
     tty: true
     
